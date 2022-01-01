@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 var https = require('https');
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
