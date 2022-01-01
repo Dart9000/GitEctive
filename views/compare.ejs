@@ -1,0 +1,19 @@
+<%- include("header") -%>
+
+    <section>
+      <h2>Compare GitHub Repo</h2>
+        <form class="" action="/compare" method="post">
+          <input type="text" class="form-control" name="repoURL1" placeholder="Enter URL 1">
+          <input type="text" class="form-control" name="repoURL2" placeholder="Enter URL 2">
+          <button type="submit" name="button">Compare</button>
+        </form>
+
+        <% if(copyPer != -1){%>
+          <div class="">
+            <h3>The repo is <%= Math.round(copyPer.score*100)%>% copied</h3>
+          </div>
+        <%}%>
+    </section>
+
+  </body>
+</html>

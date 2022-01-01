@@ -1,0 +1,21 @@
+<%- include("header") -%>
+
+    <section>
+      <h2>Analyze GitHub Repo</h2>
+        <form class="" action="/analyze" method="post">
+          <input type="text" class="form-control" name="repoURL" placeholder="Enter URL">
+          <button type="submit" name="button">Search</button>
+        </form>
+
+        <% if(repoName != ''){%>
+          <div class="">
+            <h3><%= repoName%></h3>
+            <p>First Commit: <%= repoData.start%></p>
+            <p>Last Commit: <%= repoData.end%></p>
+            <p>Total Commit: <%= repoData.span%></p>
+          </div>
+        <%}%>
+    </section>
+
+  </body>
+</html>
