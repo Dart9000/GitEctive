@@ -130,11 +130,41 @@ h2{
 
 /* Pages */
 .formsec{
-  text-align: center;
+  margin-top: 20vh;
 }
 form{
   width: 40vw;
   display: flex;
+}
+
+.card{
+  margin: 15px 0;
+  padding: 0 0 20px;
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+}
+.card h3{
+  background-color: #A5DCF0;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+.card p{
+  padding-left: 16vw;
+}
+.comDay{
+  padding-left: 20vw;
+}
+.perCon p{
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #A5DCF0;
+  width: 13vw;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10vh;
+  font-family: 'Averia Serif Libre', cursive;
 }
 
 @media screen and (max-width: 991px) {

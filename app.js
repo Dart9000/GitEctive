@@ -22,7 +22,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/analyze", (req, res) => {
-  res.render("analyze", {repoData: repoData, repoName: repoName});
+  const stats = repoData.stats;
+  res.render("analyze", {repoData: repoData, repoName: repoName, stats: stats});
 });
 
 app.post("/analyze", (req, res) => {

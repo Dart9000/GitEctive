@@ -7,13 +7,17 @@
           <button type="submit" name="button">Search</button>
         </form>
 
-        <% if(repoName != ''){%>
-          <div class="">
-<p></p>
+        <%if(repoName != ''){%>
+          <div class="card">
             <h3><%= repoName%></h3>
             <p>First Commit: <%= repoData.start%></p>
             <p>Last Commit: <%= repoData.end%></p>
             <p>Development Period: <%= repoData.span%></p>
+
+            <p>Commits on perticular day:</p>
+            <% for(let x in stats){%>
+              <i class="comDay"><%= x%>: <%= stats[x]%></i>
+            <%}%>
 
           </div>
         <%}%>
