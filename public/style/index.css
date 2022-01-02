@@ -8,10 +8,15 @@
   padding: 1% 6%;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
 }
+h2{
+  font-family: 'Averia Serif Libre', cursive;
+  line-height: 1.5;
+}
 
 .logo {
   color: #333333;
   font-size: 2.5rem;
+  font-weight: bolder;
   font-family: 'Averia Serif Libre', cursive;
 }
 
@@ -79,6 +84,50 @@
 .cta-btn2 {
   font-size: 21px;
 }
+
+/* Home */
+.sec{
+  padding: 1% 6%;
+}
+.homeTxt{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.BtnCon{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.aCon1{
+  font-family: 'Averia Serif Libre', cursive;
+  padding: 7px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  background: #A5DCF0;
+  color: #444;
+  margin-right: 15px;
+  box-shadow: hsla(210, 40%, 52%, .4) 1px 1px 20px;
+}
+.blackBtn{
+  background-color: #fff;
+}
+.aCon1:hover{
+  text-decoration: none;
+  color: #444;
+  box-shadow: hsla(210, 40%, 52%, .4) 2px 2px 30px;
+}
+.homeImg{
+  width: 40vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 
 @media screen and (max-width: 991px) {
   .header {
