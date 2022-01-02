@@ -128,6 +128,14 @@ h2{
   right: 0;
 }
 
+/* Pages */
+.formsec{
+  text-align: center;
+}
+form{
+  width: 40vw;
+  display: flex;
+}
 
 @media screen and (max-width: 991px) {
   .header {

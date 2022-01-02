@@ -1,6 +1,6 @@
 <%- include("header") -%>
 
-    <section>
+    <section class="sec formsec">
       <h2>Analyze GitHub Repo</h2>
         <form class="" action="/analyze" method="post">
           <input type="text" class="form-control" name="repoURL" placeholder="Enter URL">
@@ -8,7 +8,7 @@
         </form>
 
         <% if(repoName != ''){%>
-          <div class=""> 
+          <div class="">
 <p></p>
             <h3><%= repoName%></h3>
             <p>First Commit: <%= repoData.start%></p>
