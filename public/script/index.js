@@ -5,6 +5,7 @@ var navLi = document.querySelectorAll('.nav-lin li')
 
 //Event Listener
 
+
 topIcon.addEventListener("click", addNavBar);
 
 //Functions
